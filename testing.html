@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+	var url = 'http://i.picsum.photos/id/20/1280/775.jpg';
+	var url2 = 'http://i.picsum.photos/id/598/1280/775.jpg';
+	var url3 = 'http://i.picsum.photos/id/456/1280/775.jpg';
+       $(document).ready(function() {
+        $(`<img src='${url}'>`).appendTo('#card1');
+		$(`<img src='${url2}'>`).appendTo('#card2');
+		$(`<img src='${url3}'>`).appendTo('#card3');
+       });
+
+</script>
+
+  </head>
+  <body>
+  <h1 style="text-align:center;"> BootstrapCards</h1>
+  <div class="container" style="height:900px; width:700px;margin-left:10px">
+  <section class="card" style=" height: 700px; width:800px">
+  <div id="card1" class="card-img-top"></div>
+  <div id="info" class="card-body">
+    <h4 class="card-title">Pawel Kadysz</h4>
+    
+    <a href="http://i.picsum.photos/id/20/1280/775.jpg" class="btn btn-primary">Download</a>
+  </div>
+  </div>
+  </section>
+  <div class="container" style="height:900px; width:700px;margin-left:10px"">
+  <section class="card" style=" height: 700px; width:800px">
+  <div id="card2" class="card-img-top"></div>
+  <div class="card-body">
+    <h4 class="card-title">Pawel Kadysz</h4>
+    
+    <a href="http://i.picsum.photos/id/598/1280/775.jpg" class="btn btn-primary">Download</a>
+  </div>
+  </div>
+  </section>
+  <div class="container" style="height:900px; width:700px;margin-left:10px"">
+  <section class="card" style=" height: 700px; width:800px">
+  <div id="card3" class="card-img-top"></div>
+  <div class="card-body">
+    <h4 class="card-title">Pawel Kadysz</h4>
+    
+    <a href="http://i.picsum.photos/id/456/1280/775.jpg" class="btn btn-primary">Download</a>
+  </div>
+  </div>
+  </section>
+  </div>
+</div>
+</body>
+</html>
